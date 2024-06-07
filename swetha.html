@@ -1,61 +1,44 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C programming</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policy Download</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <style>
-        nav{
-            background-color: black;
-            color: white;
-            padding: 10px;
-            margin-bottom: 0%;
-        }
-        ul,li,input,button{
-            display: inline;
-            justify-content: space-between;
-        }
-        input{
-            width: 300px;
-            margin-left: 33%;
-        }
-        li{
-            padding: 25px;
-        }
-    div{
-        background-color: blue;
-        color: black;
-        margin-top: 0%;
-        padding: 10px;
-    }
-   
-    
+    <header>
+        <nav>
+            <img src="logo.svg" height="60px"; width="80px">
         
-    </style>
-    <nav>
+        </nav>
         
-            <img src="GeeksforGeeks.svg.png" height="30px"; width="40px">
-        
-
-        <ul>
-            <li>Web Technology</li>
-            <li>C programming</li>
-            <li>Cources</li>
-        </ul>
+    </header>
     
-    
-        
-        <input placeholder>
-        <button>Search</button>
-     
-    
-    </nav>
-    <div>
-    <h1>C programming</h1>
-    <p>C is a procedural programming language.It was initially developed by Dennis Ritchie as a system programming language to write operating system.The main features of a C language includw low-level access to memory,simple set of keywords,and clean style,these features make C language suitable for system programming like operating system or compiler development.</p>
-    </div> 
+  
+  <form id="policyForm">
+    <h1>Policy Download</h1>
+    <label for="policyType">Choose policy type:</label>
+    <select id="policyType" name="policyType">
+      <option value="motor">Motor Policy</option>
+      <option value="other">Other Policy</option>
+      
+    </select>
+    <br>
+    <label for="policyNumber">Enter policy number:</label>
+    <input type="text" id="policyNumber" name="policyNumber">
+    <br>
+    <label for="vehicleRegistration">Enter vehicle registration number:</label>
+    <input type="text" id="vehicleRegistration" name="vehicleRegistration">
+    <br>
+    <label for="engineNumber">Enter engine number:</label>
+    <input type="text" id="engineNumber" name="engineNumber">
+    <br>
+    <button type="submit">Download Policy</button>
+  </form>
+  
+  <script src="script.js"></script>
 </body>
 </html>
+
+
